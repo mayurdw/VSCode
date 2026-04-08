@@ -17,7 +17,7 @@
         // switch b/w buffers
         {
             "before": [
-                "<S-h>"
+                "[b"
             ],
             "commands": [
                 ":bprevious"
@@ -25,7 +25,7 @@
         },
         {
             "before": [
-                "<S-l>"
+                "]b"
             ],
             "commands": [
                 ":bnext"
@@ -61,8 +61,7 @@
         // panes
         {
             "before": [
-                "leader",
-                "h"
+                "<M-h>",
             ],
             "commands": [
                 "workbench.action.focusLeftGroup"
@@ -70,8 +69,7 @@
         },
         {
             "before": [
-                "leader",
-                "j"
+                "<M-j>"
             ],
             "commands": [
                 "workbench.action.focusBelowGroup"
@@ -79,8 +77,7 @@
         },
         {
             "before": [
-                "leader",
-                "k"
+                "<M-k>"
             ],
             "commands": [
                 "workbench.action.focusAboveGroup"
@@ -88,8 +85,7 @@
         },
         {
             "before": [
-                "leader",
-                "l"
+                "<M-l>"
             ],
             "commands": [
                 "workbench.action.focusRightGroup"
@@ -415,26 +411,4 @@
     "vim.autoindent": true,
     "vim.useSystemClipboard": true,
     "vim.highlightedyank.enable": true,
-    "vim.insertModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "k"
-            ],
-            "after": [
-                "ESC"
-            ]
-        }
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                "j",
-                "k"
-            ],
-            "after": [
-                "ESC"
-            ]
-        }
-    ]
 }
