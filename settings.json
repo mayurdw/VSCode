@@ -1,6 +1,6 @@
 {
     // Normal VSCode Settings
-    "workbench.colorTheme": "Abyss",
+    "workbench.colorTheme": "Experimental Dark",
     "editor.renderWhitespace": "all",
     "editor.fontFamily": "Cascadia Mono",
     "editor.fontSize": 16,
@@ -12,6 +12,20 @@
     "workbench.activityBar.location": "hidden",
     // VIM Settings
     "vim.inccommand": "replace",
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
+            ],
+            "commands": [
+                ":w!"
+            ]
+        }
+    ],
     "vim.normalModeKeyBindingsNonRecursive": [
         // NAVIGATION
         // switch b/w buffers
@@ -188,8 +202,11 @@
         // NICE TO HAVE
         {
             "before": [
-                "leader",
-                "w"
+                "j",
+                "k"
+            ],
+            "after": [
+                "<Esc>"
             ],
             "commands": [
                 ":w!"
