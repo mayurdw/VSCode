@@ -28,10 +28,10 @@
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         // NAVIGATION
-        // switch b/w buffers
         {
             "before": [
-                "[b"
+                "[",
+                "b"
             ],
             "commands": [
                 ":bprevious"
@@ -39,7 +39,8 @@
         },
         {
             "before": [
-                "]b"
+                "]",
+                "b"
             ],
             "commands": [
                 ":bnext"
@@ -57,6 +58,7 @@
         {
             "before": [
                 "leader",
+                "w",
                 "v"
             ],
             "commands": [
@@ -66,7 +68,8 @@
         {
             "before": [
                 "leader",
-                "s"
+                "w",
+                "h"
             ],
             "commands": [
                 ":split"
@@ -116,22 +119,10 @@
                 "editor.action.goToDefinition"
             ]
         },
-        // Peek Definition
-        {
-            "before": [
-                "g",
-                "p",
-                "d"
-            ],
-            "commands": [
-                "editor.action.peekDefinition"
-            ]
-        },
         // Show Hover
         {
             "before": [
-                "g",
-                "h"
+                "K"
             ],
             "commands": [
                 "editor.action.showDefinitionPreviewHover"
@@ -147,22 +138,12 @@
                 "editor.action.goToImplementation"
             ]
         },
-        // Peek Implementations
-        {
-            "before": [
-                "g",
-                "p",
-                "i"
-            ],
-            "commands": [
-                "editor.action.peekImplementation"
-            ]
-        },
         // Quick fix
         {
             "before": [
-                "g",
-                "q"
+                "leader",
+                "a",
+                "m"
             ],
             "commands": [
                 "editor.action.quickFix"
@@ -171,8 +152,9 @@
         // Go to References
         {
             "before": [
+                "leader",
                 "g",
-                "r"
+                "u"
             ],
             "commands": [
                 "editor.action.referenceSearch.trigger"
@@ -215,7 +197,8 @@
         {
             "before": [
                 "leader",
-                "W"
+                "q",
+                "o"
             ],
             "commands": [
                 ":wall"
@@ -224,7 +207,8 @@
         {
             "before": [
                 "leader",
-                "q"
+                "q",
+                "c"
             ],
             "commands": [
                 ":q!"
@@ -237,15 +221,6 @@
             ],
             "commands": [
                 ":qall"
-            ]
-        },
-        {
-            "before": [
-                "leader",
-                "x"
-            ],
-            "commands": [
-                ":x!"
             ]
         },
         {
@@ -277,17 +252,8 @@
         },
         {
             "before": [
-                "<leader>",
-                "c",
-                "a"
-            ],
-            "commands": [
-                "editor.action.quickFix"
-            ]
-        },
-        {
-            "before": [
                 "leader",
+                "f",
                 "f"
             ],
             "commands": [
