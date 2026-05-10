@@ -30,13 +30,32 @@
         // NAVIGATION
         {
             "before": [
-                "leader",
+                "<leader>",
                 "d",
                 "h"
             ],
             "commands": [
                 "workbench.action.toggleSidebarVisibility",
-                "workbench.action.toggleAuxiliaryBar"
+                "workbench.action.closeAuxiliaryBar"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "r"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "x"
+            ],
+            "commands": [
+                "workbench.view.explorer"
             ]
         },
         {
@@ -229,7 +248,8 @@
                 "c"
             ],
             "commands": [
-                ":q!"
+                ":q!",
+                "workbench.action.closeActiveEditor"
             ]
         },
         {
@@ -317,6 +337,25 @@
             ],
             "commands": [
                 ":noh"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "p"
+            ],
+            "commands": [
+                "workbench.action.showCommands"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "l"
+            ],
+            "commands": [
+                "workbench.view.extensions"
             ]
         }
         // Runs task defined in .../User/.vscode/task.json
